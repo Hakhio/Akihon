@@ -9,3 +9,7 @@
     </div>
 </footer>
 <!-- Fin du pied de page -->
+
+</body>
+
+</html>

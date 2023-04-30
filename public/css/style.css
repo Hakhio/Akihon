@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Upper */
+#upper {
+  background-color: #A9C9FF;
+  background-image: linear-gradient(270deg, #bdd5ff 0%, #f3a0d9 100%);
+  color: white;
+  font-size: 15px;
+  text-align: center;
+
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+}
+
+#upper h5{
+  
+}
+/* Fin de Upper */
+
+/* Barre de navigation */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  position: sticky;
+  top: 20;
+}
+
+nav h1 {
+  font-size: 20px;
+}
+
+nav .onglets {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav .onglets p {
+  font-size: 17px;
+  margin-right: 40px;
+}
+
+nav .onglets input {
+  margin: 8px 20px;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  background-color: #f2f2f2;
+  outline: none;
+}
+
+#logo {
+  width: 180x;
+  height: 40px;
+}
+
+/* Fin de la barre de navigation */
+
+/* Slogan */
+#slogan {
+  background-color: #b6a2d5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#slogan h1 {
+  font-size: 40px;
+  max-width: 600px;
+  text-align: center;
+  color: white;
+}
+
+#slogan button {
+  padding: 20px;
+  margin: 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+
+}
+
+/* Fin du Slogan */
+
+/* Meilleurs Ventes */
+#bestsells {
+  background-color: #A9C9FF;
+  background-image: linear-gradient(270deg, #f3a0d9 0%, #bdd5ff 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#bestsells h1 {
+  font-size: 40px;
+  max-width: 600px;
+  text-align: center;
+  color: white;
+}
+
+/* Fin du Slogan */
+
+/* Section principale */
+
+.main {
+  margin: 20px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Toutes les cartes */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards .card {
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.cards .card img {
+  width: 350px;
+}
+
+.cards .card .card-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cards .card .card-body p {
+  margin-top: -10px;
+}
+
+/* Fin de toutes les cartes */
+
+/* Fin de la section principale */
+
+/* Pied de page */
+footer {
+  margin-top: 100px;
+  background-color: #000;
+  padding: 30px;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .social-media {
+  display: flex;
+}
+
+footer .social-media p {
+  margin-right: 15px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  padding: 5px;
+  text-align: center;
+  width: 20px;
+  cursor: pointer;
+}
+
+/* Fin du pied de page */
+
+@media screen and (max-width: 640px) {
+
+  nav .onglets .link,
+  nav h1 {
+    display: none;
+  }
+
+  .cards .card img {
+    width: 300px;
+  }
+}
+
+/* 404 */
+.text-center {
+  text-align: center;
+}

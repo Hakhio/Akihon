@@ -1,15 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akihon</title>
-</head>
+//Inclure la config 
+include_once 'controllers/config.php';
 
-<body>
+//Inclure le haut de la page
+include_once 'views/html/upper.php';
+include_once 'views/html/header.php';
+include_once 'views/html/navbar.php';
 
-</body>
+//La page qui changera entre les scènes
+include_once 'controllers/rooter.php';
 
-</html>
+//Inclure le bas de la page
+include_once 'views/html/footer.php';
+
+?>
