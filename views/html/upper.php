@@ -1,1 +1,1 @@
-<h5 id="upper">Découvrez toutes nos nouveautées <a href="views/page/news.php">ici</a> !</h5>
+<h5 id="upper" class="mb-0">Découvrez toutes nos nouveautées <a href="?page=news">ici</a> !</h5>

@@ -1,48 +1,23 @@
-<h1>Connexion</h1>
-<div class="sm-12 signin-container">
+<div class="container my-3">
+    <!-- Titre de la page -->
+    <h1 class="text-center">Connexion</h1>
 
-    <form action="sign-in" method="POST">
+    <!-- Réserver l'emplacement du message d'erreur -->
+    <div class="alert <?=$valid?> mb-3 my-4"><?=isset($signin_information) ? $signin_information : '‎' ?></div>
 
-        <div class="row align-items-center ms-auto">
-
-            <div class="col-lg-6">
-                <img src="public/img/logo.png" alt="Logo" class="img-fluid rounded">
-            </div>
-            <div class="col-lg-6">
-
-                <?php
-                
-                if(!empty($signin_information)) {
-                    echo '<div class="form-floating mb-3 my-4">';
-                    echo $signin_information;
-                    echo '</div>';
-                }
-                
-                ?>
-
-                <!-- EMAIL -->
-                <div class="form-floating mb-3 my-4">
-                    <input type="email" name="email" id="email" placeholder="Email">
-                    <label for="email"><i class="fa-solid fa-at"></i> Email</label>
-                    
-                </div>
-
-                <!-- PASSWORD -->
-                <div class="form-floating my-4">
-                    <input type="password" name="password" id="password" placeholder="Password">
-                    <label for="password"><i class="fa-solid fa-key"></i> Mot de passe</label>
-                    
-                </div>
-
-            </div>
-
-            <button type="submit" class="btn btn-primary w-25 ms-auto mb-3">Se connecter</button>
-
-            <!-- S'enregistrer -->
-            <p class="text-center">Toujours pas inscrit ? C'est par <a href="../connection/register.php">ici</a> !</p>
-
+    <!-- Formulaire -->
+    <form method="post" action="?page=sign-in">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control <?= $email_validity ?>" id="floatingInput" placeholder="name@example.com" name="email" value="<?= $email ?>">
+            <label for="floatingInput">Email :</label>
+        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control <?= $password_validity ?>" id="floatingPassword" placeholder="Password" name="password">
+            <label for="floatingPassword">Mot de passe :</label>
         </div>
 
-
+        <button type="submit" class="btn btn-primary mt-3" name="sign-in">Se connecter</button>
     </form>
+
+    <p class="my-3">Vous n'avez pas de compte ? <a href="?page=register">Inscrivez-vous ici</a></p>
 </div>
